@@ -1,0 +1,1351 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;1,200&family=Moon+Dance&family=Nunito+Sans:wght@300&family=Ubuntu&display=swap');
+*{
+    margin:0;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --black1:#000000;
+    --black2:#454545;
+    --sky:#D9EDF7;
+    --blue:#0DCAF0;
+    --blue2:#0DCAF0;
+    --green:#13CEB6;
+    --grey:#F7F7F7;
+    --white:#ffffff;
+
+}
+body{
+    width:100%;
+    position: relative;
+    background-color: #F7F7F7;
+}
+.flex{
+    display:flex;
+}
+img{
+    width:100%;
+}
+input:hover{
+    box-shadow: inset 0 0 3px var(--blue);
+}
+h1,h2,h3,h4,h5,h6,
+thead td{
+    color:var(--blue);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+button,
+.button,
+.btn{
+    background-color:var(--blue);
+}
+button:hover,
+.button:hover,
+.btn:hover{
+    opacity:75%;
+    box-shadow: 0 0 0 2px var(--blue);
+}
+hr{
+    margin:5px;
+    opacity:10%;
+    
+}
+.navbar{
+    display: flex;
+    background-color: var(--black1);
+    padding:0px ;
+    flex-wrap: wrap;
+}
+.navbar .leftbox{
+    position: relative;
+    margin-left:80px;
+    text-transform: capitalize;
+    float: left;
+
+   
+    
+}
+.navbar .leftbox .logo{
+    color:var(--white);
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: white;
+
+}
+
+
+.navbar .leftbox {
+    display:flex;
+    margin:auto 25px;
+}
+.navbar ul{
+    margin: auto;;
+}
+.navbar a{
+    text-align: none;
+    padding:0;
+    margin: 0;
+}
+.navbar .leftbox li{
+    position: relative;
+    margin:0 12px;
+}
+
+.navbar .leftbox li a{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.navbar .leftbox li a:hover{
+    opacity: 60%;
+    transition: .2s;
+}
+.navbar .rightbox{
+    position: relative;
+    display: flex;
+    float:right;
+   
+}
+
+.navbar .rightbox ul p{
+    margin: auto;
+}
+
+.navbar .rightbox li ion-icon{
+    color: var(--white);
+    font-size: 15px;
+    margin:auto;
+    margin-right:4px
+}
+.navbar .rightbox li .ion{
+     margin-top: 8px;
+     margin-right: 0;
+}
+
+.navbar .rightbox p{
+    color:white;
+    font-size: 14px;
+}
+.navbar .rightbox a{
+    color:white;
+    margin:0 5px;
+}
+.navbar .rightbox .account a:hover,
+.navbar .rightbox .language p:hover{
+    opacity: 75%;
+}
+
+.navbar .rightbox .language-change{
+    position: relative;
+}
+.navbar .rightbox .language-item{
+    display:none;
+}
+.navbar .rightbox .language-item a{
+    font-size: 13px;
+    opacity: 100%;
+}
+.navbar .rightbox .language-list{
+    position:absolute;
+	background-color:var(--white);
+    z-index: 1;
+    margin-left: -25px;
+    box-shadow: 0 0 1px var(--black1);
+    border-radius: 2px;
+    display: block;
+    
+}
+.navbar .rightbox .language-list a{
+    color:var(--black);
+	padding:5px 16px;
+	display:block;
+}
+
+
+
+
+
+.notice{
+    width:100%;
+    display:flex;
+}
+
+.notice .worktime{
+    width:420px;
+    padding:8px;
+    font-size: 14px;
+    color: var(--white);
+    margin: 0;
+}
+.notice marquee{
+    background-image:linear-gradient(to right,rgb(255, 113, 113), rgb(252, 252, 125));
+    margin: auto;
+    padding:8px;
+}
+.notice marquee p{
+    color:var(--white);
+    margin: auto;
+
+}
+.notice marquee strong{
+    color: yellow;
+}
+.service{
+    box-shadow: 1px -1px 1px rgb(240, 232, 232);
+    padding:50px;
+    background:var(--white);
+    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 40px;
+}
+.service .service-content{
+    display:flex;
+    position: relative;
+
+}
+.service .service-content i,
+.service .service-content ion-icon{
+     font-size: 40px;
+     margin:auto 12px;
+     color: #0DCAF0;
+
+}
+.service .service-content .icon{
+    margin-top: 10px;
+   
+}
+
+.service .service-content p{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+.details{
+    position:relative;
+    padding:20px;
+    display: flex;
+    grid-gap:30px;
+    width: 85%;
+    margin:auto;
+    
+    
+}
+.details .exchange{
+    position: relative;
+    width:70%;
+    text-transform: capitalize;
+}
+.details .incomplete{
+    position:relative;
+    display: grid;
+    background:var(--white);
+    padding:20px;
+    width:100%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    min-height: 590px;
+
+}
+.details .complete{
+    position:relative;
+    display: grid;
+    background:var(--white);
+    padding:20px;
+    width:100%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    min-height: 600px;
+    margin-top: 25px;
+
+}
+.details .exchange .header{
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.details .exchange h2,
+.details h3{
+    float: left;
+}
+.details .exchange .btn{
+    position:relative;
+    padding:5px 10px;
+    text-decoration: none;
+    color:var(--white);
+    border-radius: 5px;
+    float:right
+}
+.details table{
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+.details table thead td{
+    font-weight: 600;
+    
+}
+.details table tr{
+    color:var(--black1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding:8px 2px;
+    border-radius: 3px;
+}
+.details table tbody tr td{
+    font-size: 13px;
+}
+.details table tbody tr:last-child{
+    border-bottom: none;
+}
+.details table tbody tr:hover{
+    background: var(--blue);
+    color:var(--white);
+    padding:0 2px;
+    border-radius: 3px;
+}
+.details td:last-child{
+    padding-right: 8px;
+}
+.details table td{
+    text-align: center;
+    margin:0;
+    padding:-5px;
+}
+
+.details .green{
+    padding:2px 4px;
+    background-color: #09E072;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+}
+
+.details .hold{
+    padding:2px 4px;
+    background-color: #5BC0DE;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+}
+.details .timeout{
+    padding:2px 4px;
+    background-color: #D9534F;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+}
+.details .Accepted{
+    padding:2px 4px;
+    background-color: #5CB85C;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+}
+.details table  .img{
+    width:20px
+}
+.details table img{
+    width:100%;
+    margin-right:50px
+}
+.details table .coin{
+    display:flex;
+    margin-left: 5;
+}
+.details table i{
+    margin-right: 5px;
+}
+.details table p{
+    margin-left: 5px;
+}
+
+
+
+
+
+
+.details .sidebar{
+    position: relative;
+    width:22%;
+    text-transform: capitalize;
+    margin-left: 3%;
+    display: block;
+}
+
+.reserve{
+    position:relative;
+    display: grid;
+    background:var(--white);
+    padding:20px;
+    width:100%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    min-height: 250px;
+  
+}
+
+.reserve .reserve-content{
+    margin:5px 0;
+}
+
+.reserve img{
+    border-radius: 50%;
+}
+.reserve .img{
+    width:40px;
+    height: 40px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    margin:5px;
+    margin-right: 15px;
+}
+.reserve h4{
+    font-size: 14px;
+}
+.reserve p{
+    font-size: 12px;
+}
+
+.details .sidebar .today{
+    position:relative;
+    display: grid;
+    background:var(--white);
+    padding:20px;
+    width:100%;
+    margin-top: 25px;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    min-height: 350px;
+  
+}
+
+.details .sidebar td{
+    padding:8px
+}
+.details .sidebar tbody td:nth-child(2){
+    color: #ff0808;
+}
+.details .sidebar tbody td{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.details .sidebar .tracking{
+    position:relative;
+    background:var(--white);
+    padding:20px;
+    width:100%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    margin-bottom: 25px;
+  
+}
+
+.details .sidebar .tracking input{
+    width:90%;
+    margin: 5px auto;
+    padding:10px;
+    outline: 1px solid var(--blue2);
+    border: none;
+    border-radius: 5px;
+
+}
+
+.details .sidebar .button {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: .2s;
+
+  }
+
+
+
+
+
+
+
+
+
+
+.shortcut{
+    margin-top: 80px;
+    text-transform: capitalize;
+    padding:50px;
+    display: flex;
+}
+
+.shortcut h3{
+    color: var(--white);
+    padding:10px;
+    margin-bottom: 10px;
+}
+.shortcut a{
+    display: block;
+    color: var(--white);
+    padding:5px 10px;
+}
+.shortcut a:hover{
+   opacity: 75%;
+}
+.shortcut-item{
+    margin-right: 30%;
+}
+
+
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius:5px; 
+    font-size: 12px; 
+    background: none;
+    box-shadow: 0 0 2px var(--sky);
+  }
+  
+  #myBtn:hover {
+    box-shadow: 0 0 2px var(--sky);
+  }
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* exchange page start */
+.bg-overlay{
+    width:100%;
+    background-image: url("money.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px 0;
+}
+.exchange-start{
+    width:60%;
+    background-color: #F7F7F7;
+    margin: auto;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.exchange-start h2{
+    padding: 10px;
+}
+
+.exchange-start i{
+    margin: auto;
+    margin-right: 5px;
+}
+.exchange-start .send{
+    width:45%;
+    margin-right: 5%;
+}
+
+.exchange-start .received{
+    width:45%;
+}
+.exchange-start select{
+    width:100%;
+    padding:10px;
+    border-radius: 5px;
+    outline: 0.5px solid var(--blue2);
+    margin: 10px;
+    border: none;
+    
+}
+.exchange-start select:hover{
+    box-shadow: inset 0 0 4px var(--blue2);
+}
+
+.exchange-start input{
+    width:95%;
+    padding:10px;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: 0.5px solid var(--blue2);
+    
+}
+.exchange-start input:hover{
+    box-shadow: inset 0 0 4px var(--blue2);
+}
+.exchange-start .received input{
+    cursor:not-allowed;
+}
+.exchange-start p{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.exchange-start .button{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin:20px;
+    margin-left: 28%;
+    transition: .2s;
+  
+
+}
+.exchange-start button a{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.container{
+    width:95%;
+    margin:20px auto;
+    padding:25px;
+    display: flex;
+    grid-gap:25px
+}
+.container .sellrate{
+    width:65%;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding:15px;
+    box-shadow:0 0 2px var(--white);
+    min-height: 500px;
+}
+.container .reserve{
+    width:40%;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding:15px;
+    box-shadow:0 0 2px var(--white);
+
+}
+.container h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container td{
+    text-transform: uppercase;
+    text-align: center;
+}
+.container td:first-child,
+.container th{
+    text-align: center;
+    text-transform: capitalize;
+}
+.container td{
+    padding:20px;
+}
+.accept{
+    width:90%;
+    margin: auto;
+    margin-top: 25px;
+    padding:25px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--white);
+}
+.accept-content .image{
+    width:50px;
+    height:50px;
+    border:3px solid var(--blue);
+    border-radius: 50%;
+}
+.accept-content .image img{
+    border-radius: 50%;
+}
+.accept h3,
+.accept h5{
+    text-align: center;
+}
+.accept-money{
+    padding:10px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.accept-content{
+    padding:10px;
+    box-shadow: 0 0 1px 0px var(--blue);
+    border-radius: 5px;
+    display: flex;
+}
+.accept-content .text{
+    margin: auto;
+}
+/* exchange page end */
+
+
+
+
+
+
+
+
+
+
+/*testimonials page start*/
+.review-box{
+    position:relative;
+    display: grid;
+    background:var(--white);
+    padding:20px;
+    width:90%;
+    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    margin:25px 5% 0 25px;
+
+}
+.customer-review{
+    padding:10px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.review-content{
+    border:1px solid rgb(230, 224, 224);
+    border-radius: 5px;
+    margin-right:2%;
+    padding:10px
+}
+.review-content p{
+    margin: 4px;
+    text-align: justify;
+    font-size: 13px;
+}
+.review-content .content{
+    width:250px
+}
+.review-content i{
+    margin-right: 5px;
+}
+.review-content .user{
+    font-size: 12px;
+    font-weight: 600;
+}
+.review-content .positive{
+    padding:2px 4px;
+    background-color: #5CB85C;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+    width:30%
+}
+.review-content .neutral{
+    padding:2px 4px;
+    background-color: #F0AD4E;
+    color:var(--white);
+    border-radius:4px;
+    font-size:14px;
+    font-weight: 500;
+    width:30%
+
+}
+/*testimonials page end*/
+
+
+
+
+
+
+
+/*contact page start*/
+.contact{
+    width:80%;
+    margin:50px auto;
+    padding:25px;
+    background-color: var(--white);
+    box-shadow:0 0 5px var(--white);
+    border-radius: 5px;
+    position: relative
+}
+hr{
+    margin: 20px;
+    opacity: 20%;
+}
+.contact h2{
+    text-align: start;
+    margin:10px;
+    margin-bottom: 0px;
+}
+.contact h4{
+    text-align: start;
+    margin:10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.contact .information{
+    display: flex;
+    position: relative;
+    width:100%;
+}
+.contact .information .self{
+    position: relative;
+    width: 30%;
+}
+.contact .information .self a{
+    font-size: 13px;
+    color: var(--black1);
+    margin-left: 10px;
+}
+.contact .information .self i,
+.contact .information .self ion-icon{
+    opacity:75%;
+}
+.contact .message{
+    width:65%
+}
+.contact .information hr{
+    margin-right:50px
+}
+.contact input,
+.contact textarea
+{
+    margin: auto;
+    width:95%;
+    margin-bottom:20px;
+    padding:10px 8px;
+    border-radius: 5px;
+    border:none;
+    outline:1px solid var(--sky)
+}
+.contact textarea:hover{
+    box-shadow:inset 0 0 5px var(--sky);
+}
+
+
+.contact .message-button{
+    padding:10px 50px;
+    border-radius: 5px;
+    margin-top:500px;
+    transition: .2s
+}
+.contact p{
+    font-size: 13px;
+    text-align: start;
+    margin-bottom:5px ;
+}
+
+/*contact page start*/
+
+
+
+
+
+
+/*login page end*/
+
+.login{
+    width:500px;
+    margin:50px auto;
+    padding:25px;
+    background-color: var(--white);
+    box-shadow:0 0 5px var(--white);
+    border-radius: 5px;
+    position: relative;
+
+}
+.login h2,
+.login h4{
+    text-align: center;
+    margin:10px
+}
+.login input{
+    margin: auto;
+    width:95%;
+    margin:10px 0;
+    padding:10px 8px;
+    border-radius: 5px;
+    border:none;
+    outline:1px solid var(--sky)
+
+}
+.login .btn{
+    width:150px;
+    margin:20px auto;
+}
+
+.login .login-button{
+    background-color: var(--blue);
+    color: var(--white);
+    padding:8px 50px;
+    border-radius: 5px;
+    margin-top:500px;
+    transition: .2s;
+
+}
+.login .login-button:hover{
+    opacity:75%;
+    transition: .2s;
+    box-shadow: 0 0 0 2px var(--blue);
+}
+.login p{
+    font-size: 13px;
+    text-align: center;
+}
+.login p a{
+    color: var(--blue);
+    transition: .2s;
+
+}
+.login p a:hover{
+    opacity:90%;
+    transition: .2s;
+}
+.login .abc{
+    position: relative;
+    margin-bottom:50px;
+}
+.login .remember{
+    display: flex;
+    position: relative;
+    float: left;
+
+}
+.login .remember input{
+    width:20px;
+    outline: none;
+}
+.login .remember input:hover{
+    box-shadow: none;
+}
+.login .remember p{
+    margin:8px 5px;
+    float:left;
+}
+.login .forgot{
+    float: right;
+    margin: auto;
+}
+.login .forgot a{
+    margin: auto;
+    color: #fc8773;
+    transition: .2s;
+}
+
+/*login page end*/
+
+
+
+
+
+
+/*register page start*/
+.register{
+    width:500px;
+    margin:50px auto;
+    padding:25px;
+    background-color: var(--white);
+    box-shadow:0 0 5px var(--white);
+    border-radius: 5px;
+}
+.register h2,
+.register h4{
+    text-align: center;
+    margin:10px
+}
+.register input{
+    margin: auto;
+    width:95%;
+    margin:10px 0;
+    padding:10px 8px;
+    border-radius: 5px;
+    border:none;
+    outline:1px solid var(--sky)
+
+}
+
+.register .btn{
+    width:150px;
+    margin:20px auto;
+}
+
+.register .register-button{
+    padding:8px 50px;
+    border-radius: 5px;
+    margin-top:500px;
+    transition: .2s;
+
+}
+.register .register-button:hover{
+    opacity:75%;
+    transition: .2s;
+}
+.register a{
+    color: white;
+}
+.register p{
+    font-size: 13px;
+    text-align: center;
+}
+.register p a{
+    color: var(--blue);
+    transition: .2s;
+}
+
+.register p a:hover{
+    opacity:90%;
+    transition: .2s;
+}
+/*register page end*/
+
+
+
+
+
+/*other page start*/
+.abc{
+    width:80%;
+    margin:50px auto;
+    padding:25px;
+    background-color: var(--white);
+    box-shadow:0 0 5px var(--white);
+    border-radius: 5px;
+    position: relative;
+
+}
+.abc h3{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 5px;
+}
+.abc hr{
+    opacity: 20%;
+    margin: 5px;
+}
+.abc p{
+    font-weight: 600;
+    font-size:15px;
+    margin: 5px;
+}
+
+ 
+/*other page end*/
+
+
+
+
+
+
+/*responsive start*/
+@media screen and (max-width: 1200px){
+    .details{
+        width: 95%;  
+    }    
+    .details .exchange{
+        width:65%;
+    }
+    .details .sidebar{
+        width:26%;
+    }
+    .contact .self{
+        width:40%
+    }
+
+   
+    
+}
+@media screen and (max-width: 1100px){
+    .menubar .leftbox{
+        width:55%;
+        margin-left:80px;
+    }
+        .menubar .rightbox{
+            position: relative;
+            margin:auto;
+            width:25%;
+            margin-left: 100px;
+            display: inline-block;
+            margin-right:0;
+            
+        }
+    }
+@media screen and (max-width: 1000px){
+    .details{
+        width: 95%;  
+    }    
+    .details .exchange{
+        width:60%;
+    }
+   
+   .details .sidebar{
+    width:30%;
+}
+.contact .information .self{
+    width: 45%;
+
+}
+.contact .message{
+    width:48%
+}
+
+}
+@media screen and (max-width: 990px){
+    .exchange-start .send,
+    .exchange-start .received{
+        width:100%;
+    }
+    .exchange-start .flex{
+        display: inline-block;
+    }
+    .navbar .leftbox{
+        margin-left: 50px;
+    }
+    .navbar{
+        padding-right: 0;;
+        margin:0
+    }
+    .navbar .rightbox{
+        position: relative;
+        display: block;
+        float:right;
+    }
+    .languagebox{
+        margin-left:-65px
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .details table td:nth-child(6){
+        display:none;
+    }
+  
+}
+
+@media screen and (max-width: 850px){
+    .notice .menuicon{
+        display: inline-block;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding:2px 12px;
+    
+    }
+    .notice .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 4px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.2s;
+        opacity: 100%;
+        border-radius: 5px;
+        box-shadow:0 0 1px rgb(46, 44, 44)
+    }
+    .menubar .leftbox{
+        width:40%;
+    }
+    .navbar .leftbox .menuitem{
+       display: none;
+    }
+    .navbar .leftbox .navitem{
+        display: grid;
+        position: absolute;
+        background-color: #1cd9ff;
+        padding:10px;
+        border-radius: 0px;
+        margin-top: 93px;
+        margin-left: -62px;
+        transition: 0.5s;
+        min-height: 150px;
+        border-radius: 2px;
+        width:150px;
+        z-index: 1;
+    }
+    .navbar .leftbox .navitem li{
+        padding:5px 
+    }
+    .navbar .leftbox .navitem li a{
+        color:rgb(255, 255, 255);
+    }
+    .navbar .leftbox .navitem li a:hover{
+       opacity: 75%;
+    }
+
+
+    .navbar .rightbox{
+        position: relative;
+        display: flex;
+        float:right;
+    }
+    .languagebox{
+        margin-left:0px
+    }
+    .details{
+        width: 80%; 
+        display: block; 
+    }    
+    .details .exchange{
+        width:100%;
+    }
+   
+   .details .sidebar{
+    width:100%;
+    margin: 0;
+    margin-top: 25px;
+
+}
+
+.shortcut{
+    margin-top: 80px;
+    text-transform: capitalize;
+    padding:50px;
+    display: block;
+}
+.container{
+    display: inline-block;
+}
+.container .sellrate{
+   width: 100%;
+}
+.container .reserve{
+   width:100%;
+   margin-top: 25px;
+}
+
+}
+@media screen and (max-width: 760px){
+    marquee{
+        padding:105px;
+    }
+
+
+.exchange-start .button i{
+    display: none;
+}
+.details table :nth-child(5){
+    display:none
+}
+.contact .information{
+    display: block;
+}
+.contact .information .self{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+.contact .message{
+    width:100%;
+}
+.contact .message .name{
+    margin-top: 20px;
+}
+
+.contact .information hr{
+    margin-right: 15px;
+}
+marquee{
+    display: none;
+}
+.notice .worktime{
+width:100%;
+background-color: var(--blue);
+padding:8px;
+font-size: 14px;
+color: var(--white);
+}
+.navbar .rightbox{
+display: inline-block;
+}
+.navbar .rightbox .languagebox{
+margin-left: -70px;
+}
+.navbar .leftbox .navitem{
+margin-top: 93px;
+}
+.container .sellrate td{
+padding:5px;
+} 
+
+.menubar .rightbox{
+    display: flex;
+    margin-left:0
+    }
+}
+@media screen and (max-width: 697px){
+    .notice marquee{
+        background-image:linear-gradient(to right,rgb(255, 113, 113), rgb(252, 252, 125));
+        padding: 17px;
+        
+    }
+    .navbar .leftbox .navitem{
+        margin-top: 111px;
+    }
+
+}
+@media screen and (max-width:576px){
+    .navbar .rightbox{
+        position: relative;
+        margin:auto;
+        margin-right:0;
+        
+        
+    }
+  
+}
+ 
+
+/*responsive end*/
