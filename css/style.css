@@ -56,7 +56,7 @@ hr{
     display: flex;
     background-color: var(--black1);
     padding:0px ;
-    flex-wrap: wrap;
+    flex-wrap: ;
 }
 .navbar .leftbox{
     position: relative;
